@@ -23,3 +23,10 @@ class Person:
             people.append(person)
 
         return people
+
+    def save(self):
+        people = { 'people': [self] }
+        data = json.dumps(people, default=vars)
+
+        with open('db.txt', 'w') as outfile:
+            outfile.write(data)
