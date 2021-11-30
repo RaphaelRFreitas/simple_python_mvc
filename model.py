@@ -1,7 +1,9 @@
 import json
+import os
 
 
 class Person:
+    db_file_path = os.path.join(os.path.dirname(__file__), 'db.txt')
 
     def __init__(self, first_name, last_name):
         self.first_name = first_name
@@ -14,7 +16,7 @@ class Person:
     @classmethod
     def get_all(cls):
         raw_data = None
-        with open('db.txt') as f:    
+        with open(cls.db_file_path) as f:    
             raw_data = json.loads(f.read())
 
         people = []

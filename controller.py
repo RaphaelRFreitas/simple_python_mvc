@@ -16,9 +16,6 @@ class PersonController:
         else:
             return self.view.end_view()
 
-        people_in_db = Person.get_all()
-        self.view.show_all(people_in_db)
-
     def start(self):
         self.view.start_view()
         self.show_all()
