@@ -1,12 +1,1 @@
-{
-    "people": [
-        {
-            "first_name": "Leandro",
-            "last_name": "Maia"
-        },
-        {
-            "first_name": "Eloise",
-            "last_name": "Maia"
-        }
-    ]
-}
+{"people": [{"first_name": "Larissa", "last_name": "Freitas"}]}

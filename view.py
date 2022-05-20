@@ -17,3 +17,11 @@ class PersonView:
 
         for item in people:
             print(item.full_name)
+
+    def ask_create_operation(self):
+        return input('Do you want to add a new person to our db?[y/n]')
+
+    def ask_person_data(self):
+        first_name = input('First name: ')
+        last_name = input('Last name: ')
+        return first_name, last_name
